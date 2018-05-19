@@ -5,19 +5,43 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <View style={styles.box} />
+      <View style={styles.box2} />
+      <View style={styles.box3} >     
+        <View style={styles.subbox} />
+        <View style={styles.subbox} />
+        <View style={styles.subbox} />
+        </View>
       </View>
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#ff0000',
+    alignItems: 'stretch',
+    justifyContent: 'space-evenly',
   },
+  box: {
+    flex: 2,
+    backgroundColor: 'steelblue',
+    margin: 4,
+  },
+  box2: {
+    flex: 7,
+    backgroundColor: 'steelblue',
+    margin: 4,
+  },
+  box3: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'steelblue',
+    margin: 4,
+  },
+  subbox: {
+    flex: 1,
+    backgroundColor: 'yellow',
+    margin: 2
+  }
 });
